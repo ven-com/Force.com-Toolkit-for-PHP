@@ -219,9 +219,10 @@ class SforceBaseClient {
 	private function setHeaders($call=NULL) {
 		$this->sforce->__setSoapHeaders(NULL);
 		
-		$header_array = array (
-			$this->sessionHeader
-		);
+		$header_array = array ();
+		if ($this->sessionHeader != NULL) {
+			array_push($header_array, $this->sessionHeader);
+		};
 
 		$header = $this->callOptions;
 		if ($header != NULL) {
