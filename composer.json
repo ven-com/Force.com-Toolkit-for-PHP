@@ -1,5 +1,5 @@
 {
-    "name": "developerforce/force.com-toolkit-for-php",
+    "name": "ven-com/force.com-toolkit-for-php",
     "description": "A wrapper for the Force.com Web Services SOAP API",
     "license": "BSD-3-Clause",
     "autoload": {
